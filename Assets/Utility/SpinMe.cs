@@ -24,5 +24,6 @@ public class SpinMe : MonoBehaviour {
 
         float zDegreesPerFrame = 360 * zRotationsPerMinute * Time.deltaTime / 60;
         transform.RotateAround (transform.position, transform.forward, zDegreesPerFrame);
+
 	}
 }

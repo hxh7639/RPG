@@ -22,25 +22,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    // Fixed update is called in sync with physics
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.G)) // G for gamePad. 
-            //TODO allow player to map later or add to menu
-        {
-			currentDestination = transform.position; // reset current position for click target.
-            isInGamePadMode = !isInGamePadMode; // toggle mode
-        }
-
-        if (isInGamePadMode)
-        {
-            ProcessDirectMent();
-        }
-        else
-        {
-            ProcessMouseMovement();
-        }
-    }
 
     private void ProcessDirectMent()
     {
